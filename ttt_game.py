@@ -8,6 +8,14 @@
 Nota: La matriz puede no estar totalmente cubierta. Se podría representar con un vacío "", por ejemplo.'''
 
 def check_game(table:list) -> bool:
+    """Función que revisará cada fila del tablero pasado para confirmar si existe o no un ganador.
+
+    Args:
+        table (list): tablero en forma de lista/matriz.
+
+    Returns:
+        bool: Si hay un ganador (tres en raya) devolverá True.
+    """
 
     #Verifico las Filas pasadas:
     for row in table:
